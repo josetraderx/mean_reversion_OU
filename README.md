@@ -1,44 +1,71 @@
-# Mean Reversion Trading Strategy (Ornstein-Uhlenbeck Process)
+# Mean Reversion Trading Strategy 📈
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-A modular implementation of a mean-reversion trading bot using real market data and the Ornstein-Uhlenbeck process.
+A sophisticated implementation of a mean-reversion trading bot using real market data and the Ornstein-Uhlenbeck process for optimal entry/exit points.
 
-## Features
+## 🚀 Features
 
-- OU parameter estimation (Maximum Likelihood)
-- Buy/Sell signal generation based on deviations from the mean
-- Backtesting with portfolio tracking
-- Visualizations of signals and performance
+- **Advanced OU Parameter Estimation**
+  - Maximum Likelihood estimation
+  - Robust statistical analysis
+  - Adaptive parameter updates
 
-## Structure
+- **Smart Signal Generation**
+  - Buy/Sell signals based on mean deviations
+  - Statistical confidence thresholds
+  - Dynamic position sizing
 
-- `core/estimator.py`: Parameter estimation
-- `core/strategy.py`: Signal generation
-- `core/backtester.py`: Backtest engine
-- `core/visualizer.py`: Plots and analytics
-- `main.py`: Main script
+- **Comprehensive Backtesting**
+  - Portfolio performance tracking
+  - Risk metrics calculation
+  - Transaction cost modeling
 
-## Usage
+- **Rich Visualizations**
+  - Price and signal plots
+  - Performance analytics
+  - Real-time monitoring
 
-Install requirements:
+## 🏗️ Project Structure
 
+```plaintext
+mean_reversion/
+├── core/
+│   ├── estimator.py     # OU parameter estimation
+│   ├── strategy.py      # Trading signal generation
+│   ├── backtester.py    # Backtesting engine
+│   └── visualizer.py    # Plotting and analytics
+├── main.py              # Main execution script
+├── requirements.txt     # Project dependencies
+└── README.md           # Documentation
+```
+
+## 🔧 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/mean_reversion.git
+cd mean_reversion
+```
+
+2. Install requirements:
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the main script:
+## 📊 Usage
 
+Run the main script:
 ```bash
 python main.py
 ```
 
-You will be prompted to enter:
+The script will prompt you for:
 - Stock ticker symbol (e.g., AAPL)
 - Start date (YYYY-MM-DD)
 - End date (YYYY-MM-DD)
 
-The script will fetch data, estimate OU parameters, generate trading signals, backtest the strategy, and display performance analytics and plots.
-
-## Example Output
+## 📈 Example Output
 
 ```yaml
 ===== Mean Reversion Strategy Backtest Summary =====
@@ -50,27 +77,38 @@ Final Portfolio Value: 11230.45
 Total Return: 12.30%
 
 Estimated Parameters:
-  mu: 150.10
-  theta: 0.18
-  sigma: 4.32
+  mu: 150.10    # Mean level
+  theta: 0.18   # Mean reversion speed
+  sigma: 4.32   # Volatility
 ```
 
-## Requirements
+## 📋 Requirements
 
-- Python 3.8+
-- pandas
-- numpy
-- scipy
-- matplotlib
-- yfinance
+- **Python 3.8+**
+- Core Libraries:
+  - pandas
+  - numpy
+  - scipy
+  - matplotlib
+  - yfinance
 
-All requirements are listed in `requirements.txt`.
+All dependencies are listed in `requirements.txt`
 
-## Notes
+## ⚠️ Disclaimer
 
-- This project is for educational and research purposes only.
-- Use at your own risk. Past performance does not guarantee future results.
+- This project is for educational and research purposes only
+- Past performance does not guarantee future results
+- Trade at your own risk
+- Always validate strategies with paper trading first
 
-## License
+## 📜 License
 
-MIT License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📧 Contact
+
+For questions and feedback, please open an issue or reach out through GitHub.
