@@ -44,8 +44,8 @@ mean_reversion/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/mean_reversion.git
-cd mean_reversion
+git clone https://github.com/josetraderx/mean_reversion_OU.git
+cd mean_reversion_OU
 ```
 
 2. Install requirements:
