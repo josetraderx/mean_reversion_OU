@@ -59,7 +59,6 @@ Estimated Parameters:
   mu: 150.10
   theta: 0.18
   sigma: 4.32
-
 Requirements
 Python 3.8+
 
