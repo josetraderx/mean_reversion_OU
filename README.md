@@ -9,13 +9,14 @@ A modular implementation of a mean-reversion trading bot using real market data 
 - Visualizations of signals and performance
 
 ## Structure
-- core/estimator.py: Parameter estimation
-- core/strategy.py: Signal generation
-- core/backtester.py: Backtest engine
-- core/visualizer.py: Plots and analytics
-- main.py: Main script
+- `core/estimator.py`: Parameter estimation
+- `core/strategy.py`: Signal generation
+- `core/backtester.py`: Backtest engine
+- `core/visualizer.py`: Plots and analytics
+- `main.py`: Main script
 
 ## Usage
-1. Install requirements:
 
-2. Run:
+1. **Install requirements:**
+   ```bash
+   pip install -r requirements.txt
